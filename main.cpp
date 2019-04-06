@@ -26,7 +26,7 @@ using namespace std;
 int main() {
 
 	//prompt user
-	cout << "Enter a sentence: ";
+	cout << "\nEnter a sentence: ";
 
 	// set a max sentence lenght
 	const int SENTENCE_LENGTH = 150;
@@ -34,15 +34,16 @@ int main() {
 	// create the cstring
 	char sentence[SENTENCE_LENGTH];
 
+
 	// fill the cstring with the user input
-	cin.getline(sentence, SENTENCE_LENGTH);
+	cin.getline(sentence,SENTENCE_LENGTH);
 
 	// create a pointer to point to our solution
 	char * pch;
 
 	// split the cstring into tokens delimited by
 	// the space base
-	cout << "Splitting into tokens..." << endl;
+	cout << "Splitting into tokens...\n" << endl;
 	pch = strtok(sentence, " ");
 
 	// create variable to count the tokens
